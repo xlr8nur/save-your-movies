@@ -39,10 +39,9 @@ npx prisma generate
 npx prisma db push
 ```
 
-## Usage
+### Usage
 
 Visit https://save-your-movies.vercel.app to use the application.
-------------------------
 
 ### Adding a Movie
 - Click "ADD" button
