@@ -21,9 +21,8 @@ A Next.js application for managing your movie notes and reviews.
 - Client-side state management
 
 ## Installation
-
-1. Clone the repository:
 ```bash
+1. Clone the repository:
 git clone https://github.com/xlr8nur/save-your-movies.git
 cd save-your-movies
 
@@ -41,32 +40,32 @@ npx prisma db push
 
 Visit http://localhost:3000 to use the application.
 
-# Adding a Movie
+### Adding a Movie
 - Click "ADD" button
 - Enter movie title and content
 - Submit to save
 
-# Editing a Movie
+### Editing a Movie
 - Click the pen icon on any movie card
 - Update title or content
 - Click checkmark to save changes
 
-# Deleting a Movie
+### Deleting a Movie
 - Click the trash icon on any movie card
 - Confirm deletion
 
-# API Endpoints
+### API Endpoints
 - POST /api/movies/createMovie - Create a new movie
 - GET /api/movies/getMovies - Get all movies
 - PUT /api/movies/updateMovie - Update a movie
 - DELETE /api/movies/deleteMovie - Delete a movie
 
-# Environment Variables
+### Environment Variables
 Create a .env file in the root directory:
 
 DATABASE_URL="your-database-url"
 
-# Contributing
+### Contributing
 
 1. Fork the repository
 2. Create your feature branch (git checkout -b feature/amazing-feature)
