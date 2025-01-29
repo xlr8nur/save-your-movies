@@ -1,6 +1,6 @@
 import prisma from "@/lib/prisma";
 
-// post
+// POST METHOD
 export async function createNewData(tableName, newData) {
   try {
     const data = await prisma[tableName].create({ data: newData });
@@ -10,7 +10,7 @@ export async function createNewData(tableName, newData) {
   }
 }
 
-// delete
+// DELETE METHOD
 export async function deleteDataByAny(tableName, where) {
   try {
     const data = await prisma[tableName].delete({ where: where });
@@ -20,7 +20,7 @@ export async function deleteDataByAny(tableName, where) {
   }
 }
 
-// get 
+// GET METHOD
 export async function getAllData(tableName) {
   try {
     const data = await prisma[tableName].findMany();
@@ -30,7 +30,7 @@ export async function getAllData(tableName) {
   }
 }
 
-// put
+// PUT METHOD
 export async function updateDataByAny(tableName, where, newData) {
   try {
     const data = await prisma[tableName].update({

@@ -1,3 +1,4 @@
+// POST METHOD
 const postAPI = async (
     URL,
     body,
@@ -21,6 +22,8 @@ const postAPI = async (
       throw new Error(`API isteği başarısız ${err}`);
     }
   };
+
+  // GET METHOD
   const getAPI = async (
     URL,
     headers = { "Content-Type": "application/json" }
@@ -34,6 +37,8 @@ const postAPI = async (
       .catch((err) => console.log(err));
     return data;
   };
+
+  // DELETE METHOD
   const deleteAPI = async (
     URL,
     headers = { "Content-Type": "application/json" }
@@ -46,6 +51,8 @@ const postAPI = async (
       .catch((err) => console.log(err));
     return data;
   };
+
+  // PUT METHOD
   const putAPI = async (
     URL,
     body,
