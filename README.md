@@ -41,7 +41,8 @@ npx prisma db push
 
 ## Usage
 
-Visit http://localhost:3000 to use the application.
+Visit https://save-your-movies.vercel.app to use the application.
+------------------------
 
 ### Adding a Movie
 - Click "ADD" button
