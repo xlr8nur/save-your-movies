@@ -5,12 +5,13 @@ import { postAPI } from "@/services/fetchApi";
 import MoviesContainer from "./MoviesContainer";
 import { ImSpinner2 } from "react-icons/im";
 import { useToast } from "@/hooks/use-toast";
+import useStore from "@/store/index";
 
 function CreateMovie() {
   const [newMovie, setNewMovie] = useState({ title: "", content: "" });
-  const [movies, setMovies] = useState([]);
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
+  const addMovie = useStore((state) => state.addMovie);
 
   const createMovie = async () => {
     try {
@@ -20,9 +21,7 @@ function CreateMovie() {
         toast({
           description: "Filminiz eklendi!",
         });
-        setMovies((prevMovies) =>
-          Array.isArray(prevMovies) ? [...prevMovies, data.data] : [data.data]
-        );
+        addMovie(data.data);
         setNewMovie({ title: "", content: "" });
       } else {
         toast({
@@ -70,7 +69,7 @@ function CreateMovie() {
           <ImSpinner2 />
         </div>
       ) : (
-        <MoviesContainer movies={movies} setMovies={setMovies} />
+        <MoviesContainer />
       )}
     </div>
   );
