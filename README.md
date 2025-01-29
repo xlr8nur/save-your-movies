@@ -7,6 +7,7 @@ A Next.js application for managing your movie notes and reviews.
 ## Tech Stack
 
 - Next.js 14
+- MongoDB
 - Tailwind CSS
 - Prisma
 - Zustand
