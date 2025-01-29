@@ -2,6 +2,8 @@
 
 A Next.js application for managing your movie notes and reviews.
 
+![movies11](https://github.com/user-attachments/assets/d22ebd4f-b19d-4291-8bb5-cb14de207610)
+
 ## Tech Stack
 
 - Next.js 14
