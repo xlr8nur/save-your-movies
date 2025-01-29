@@ -63,10 +63,11 @@ Visit http://localhost:3000 to use the application.
 - DELETE /api/movies/deleteMovie - Delete a movie
 
 ### Environment Variables
+```bash
 Create a .env file in the root directory:
 
 DATABASE_URL="your-database-url"
-
+```
 ### Contributing
 
 1. Fork the repository
