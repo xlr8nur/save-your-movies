@@ -2,9 +2,12 @@
 
 A Next.js application for managing your movie notes and reviews.
 
+![movies11](https://github.com/user-attachments/assets/d22ebd4f-b19d-4291-8bb5-cb14de207610)
+
 ## Tech Stack
 
 - Next.js 14
+- MongoDB
 - Tailwind CSS
 - Prisma
 - Zustand
@@ -36,9 +39,9 @@ npx prisma generate
 npx prisma db push
 ```
 
-## Usage
+### Usage
 
-Visit http://localhost:3000 to use the application.
+Visit https://save-your-movies.vercel.app to use the application.
 
 ### Adding a Movie
 - Click "ADD" button
@@ -61,10 +64,11 @@ Visit http://localhost:3000 to use the application.
 - DELETE /api/movies/deleteMovie - Delete a movie
 
 ### Environment Variables
+```bash
 Create a .env file in the root directory:
 
 DATABASE_URL="your-database-url"
-
+```
 ### Contributing
 
 1. Fork the repository
