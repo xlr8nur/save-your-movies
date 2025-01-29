@@ -68,6 +68,7 @@ Visit https://save-your-movies.vercel.app to use the application.
 Create a .env file in the root directory:
 
 DATABASE_URL="your-database-url"
+NEXT_PUBLIC_URL="your-next-url"
 ```
 ### Contributing
 
